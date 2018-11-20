@@ -1,0 +1,202 @@
+/* Eric Meyer's CSS Reset */
+/* line 2, ../scss/core/_core.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../scss/core/_core.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../scss/core/_core.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../scss/core/_core.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../scss/core/_core.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../scss/core/_core.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../scss/core/_core.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+/* line 47, ../scss/core/_core.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 50, ../scss/core/_core.scss */
+body {
+  font: 12px/18px Arial, sans-serif;
+}
+
+/* line 53, ../scss/core/_core.scss */
+.wrapper {
+  width: 100%;
+  min-width: 300px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+/* line 61, ../scss/core/_core.scss */
+.header {
+  height: 150px;
+  background: #FFE680;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+/* line 69, ../scss/core/_core.scss */
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 5px solid #112733;
+}
+
+/* line 78, ../scss/core/_core.scss */
+.text-area {
+  height: 70%;
+  width: 100%;
+  background: white;
+  padding: 5%;
+  box-sizing: border-box;
+  overflow: auto;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: Verdana;
+  border: 1px solid #50aebf;
+}
+
+/* line 91, ../scss/core/_core.scss */
+.action-area {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  border: 1px solid #50aebf;
+  border-top: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 20px;
+}
+/* line 100, ../scss/core/_core.scss */
+.action-area:after {
+  content: 'Game by Dazvolt';
+  width: 100%;
+  height: 20px;
+  background: #112733;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #50aebf;
+  box-sizing: border-box;
+  border-top: 1px solid #50aebf;
+  text-align: center;
+  font-size: 11px;
+}
+/* line 115, ../scss/core/_core.scss */
+.action-area-buttons {
+  width: 70%;
+  height: 100%;
+  background: #112733;
+  box-sizing: border-box;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 124, ../scss/core/_core.scss */
+.action-area-buttons-button {
+  width: 100%;
+  height: 100%;
+  background: #5d7c76;
+  border: 0;
+  border-bottom: 1px solid #50aebf;
+  font-size: 3vw;
+  font-family: Verdana;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 135, ../scss/core/_core.scss */
+.action-area-buttons-button:last-child {
+  border-bottom: 0;
+}
+/* line 139, ../scss/core/_core.scss */
+.action-area-buttons-button:focus, .action-area-buttons-button:active {
+  outline: 0;
+}
+/* line 146, ../scss/core/_core.scss */
+.action-area-settings {
+  width: 30%;
+  height: 100%;
+  background: #112733;
+  border-left: 1px solid #50aebf;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 154, ../scss/core/_core.scss */
+.action-area-settings-button {
+  border: 1px solid #50aebf;
+  background: #5d7c76;
+  width: 92%;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: Verdana;
+  color: white;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+/* line 169, ../scss/core/_core.scss */
+.action-area-settings-button:focus, .action-area-settings-button:active {
+  outline: 0;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+/* line 180, ../scss/core/_core.scss */
+.footer {
+  height: 100px;
+  background: #BFF08E;
+}
